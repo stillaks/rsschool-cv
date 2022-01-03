@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akerke Otarbayeva - CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.2.0/styles/base16/github.min.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.2.0/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.2.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <main>
+    <div class="big-part">
+      <div class="photo">
+        <aside class="box"></aside>
+        <img src="./images/akerke.jpeg" alt="">
+      </div>
+      <section class="about">
+        <h1>AKERKE</h1>
+        <h2 class="surname">OTARBAYEVA</h2>
+        <h5 class="profession">NUCLEAR PHYSICIST</h5>
+        <p class="about-text">I am Akerke Otarbayeva. I am from Kazakhstan, from Nur-Sultan. 
+          I work as a Laboratory Assistant at the Physics Department of Nazarbayev University. 
+          I am quite experienced in setting up experiments, working with various experimental applications, 
+          analyzing data and writing manuals for experiments. In my free time, I like learning programming 
+          languages.</p>
+      </section>
+      <section class="work-experience">
+        <h4>WORK EXPERIENCE</h4>
+        <img class="long-underline" src="./images/long-underline.svg" alt="">
+        <ul class="work">
+          <li>
+            <p class="years">2013 - 2017</p>
+            <p>Physics and math tutor for university and school students.</p>
+          </li>
+          <li>
+            <p class="years">2018 - 2019</p>
+            <p>Tutor, International Department of Nuclear Physics, 
+              New Materials and Technologies, L.N.Gumilyov Eurasian National University.</p>
+          </li>
+          <li>
+            <p class="years">2019 - 2021</p>
+            <p>Laboratory Assistant, Department of Physics, Nazarbayev University.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="code-example">
+        <h4>CODE EXAMPLE</h4>
+        <img class="long-underline" src="./images/long-underline.svg" alt="">
+        <pre class="code">
+          <code>
+function fridayTheThirteenths(start, end) {
+  end = end || start;
+  let date = new Date(start, 0, 13);
+  let fridays13 = [];
+
+  for (let year = start; year &lt;= end; year++) {
+    date.setFullYear(year);
+    for (let month = 0; month &lt; 12; month++) {
+      date.setMonth(month);
+      if (date.getDay() === 5) {
+        const strDate = `${date.getMonth() + 1}/13/${date.getFullYear()}`;
+        fridays13.push(strDate);
+      }
+    }
+  }
+  return fridays13.join(" ");
+}
+          </code>
+        </pre>
+      </section>
+      <section class="projects">
+        <h4>PROJECTS</h4>
+        <img class="long-underline" src="./images/long-underline.svg" alt="">
+        <figure class="projects-items">
+          <a href="https://rolling-scopes-school.github.io/akerke150892-JSFE2021Q1/virtual-piano/" target="_blank">
+            <img src="./images/virtual-piano.png" alt="Virtual Piano">
+          </a>
+          <a href="https://rolling-scopes-school.github.io/akerke150892-JSFE2021Q1/wildlife/" target="_blank">
+            <img src="./images/wildlife.png" alt="Wildlife">
+          </a><a href="https://rolling-scopes-school.github.io/akerke150892-JSFE2021Q1/online-zoo/pages/landing/" target="_blank">
+            <img src="./images/online-zoo.png" alt="Online Zoo">
+          </a>
+        </figure>
+      </section>
+      <section class="certificates">
+        <h4>CERTIFICATES</h4>
+        <img class="long-underline" src="./images/long-underline.svg" alt="">
+        <ul class="certificates-list">
+          <li>
+            Certificate of intensive training on the topic "Development of advanced materials, 
+            novel devices and technology," Scientific-Practical Materials Research Center of the 
+            National Academy of Sciences of Belarus. 
+          </li>
+          <li>
+            Participation certificate in the International Summer Scientific School 
+            "Nuclear and radiation physics," Astana.
+          </li>
+          <li>	
+            Python for Everybody Specialization, University of Michigan, Coursera.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="small-part">
+      <section class="education">
+        <h4>EDUCATION</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <ul class="education-list">
+          <li>
+            <p>B.S.: NUCLEAR PHYSICS</p> 
+            <p class="years">2010 - 2015</p>
+            <p>L.N.Gumilyov Eurasian National University - Astana, Kazakhstan.</p>   
+          </li>
+          <li>
+            <p>M.S.: NUCLEAR PHYSICS</p> 
+            <p class="years">2015 - 2017</p>
+            <p>L.N.Gumilyov Eurasian National University - Astana, Kazakhstan.</p>       
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h4>SKILLS</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <ul class="skills-list">
+          <li class="physics-experiments">PHYSICS EXPERIMENTS</li>
+          <li class="english">ENGLISH</li>
+          <li class="python">PYTHON</li>
+          <li class="javascript">JAVASCRIPT</li>
+        </ul>
+      </section>
+      <section class="self-introduction">
+        <h4>SELF-INTRODUCTION</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <iframe class="intro-video" width="270" height="150" src="https://www.youtube.com/embed/FmgXT3RI2g8"
+        title="YouTube video player" allow="accelerometer; autoplay;
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </section>
+      <section class="publications">
+        <h4>PUBLICATIONS</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <p>"Study of elastic scattering of deuterons from 6Li at energy 18 MeV", 
+          NEWS of the National Academy of Science of the Republic of Kazakhstan, 
+          2017, -Vol.6, №1, P. 5-12.    
+        </p>
+      </section>
+      <section class="hobbies">
+        <h4>HOBBIES</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <p>Socializing with friends and family, singing opera, reading, coding and cycling on the regular basis.</p>
+      </section>
+      <section class="contact">
+        <h4>CONTACT</h4>
+        <img class="short-underline" src="./images/short-underline.svg" alt="">
+        <ul class="contact-list">
+          <li class="telephone">+7 708 175 71 21</li>
+          <li class="email">akerke.otarbayeva@gmail.com</li>
+          <li class="address">Nur-Sultan 010000, Kazakhstan</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer-wrapper">
+      <a href="https://github.com/stillaks" target="_blank">
+        <img class="github-icon" src="./images/github-icon.svg" alt="github-icon">
+      </a>
+      <h4 class="footer-year">Nur-Sultan 2021</h4>
+      <a href="https://rs.school/js/" target="_blank">
+        <img class="rs-school-icon" src="./images/rs-school-js-icon.svg" alt="rs-school-icon">
+      </a>
+  </footer>
+</body>
+</html>

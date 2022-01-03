@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+
+:root {
+  --main-color: #BB7A3B;
+  --paragraph-color: #242732;
+  --text-color: #4f4f4f;
+  --year-color: #BDBDBD;
+  --list-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(10rem, 30%);
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 5%;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.big-part {
+  width: 90%;
+}
+
+.small-part {
+  width: 100%;
+}
+
+.long-underline {
+  width: 80%;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.short-underline {
+  width: 80%;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+/* Avatar */
+.photo {
+  display: flex;
+  align-items: center;
+}
+
+.photo img {
+  width: clamp(270px, calc(100vw / 1024 * 270), 330px);
+}
+
+.box {
+  width: clamp(30px, calc(100vw / 1024 * 30), 50px);
+  height: clamp(203px, calc(100vw / 1024 * 203), 247px);
+  background-color: var(--main-color);
+  margin-right: 2rem;
+}
+
+/* About */
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+h4 {
+  font-weight: 900;
+  color: var(--paragraph-color);
+}
+
+.surname{
+  font-size: 25px;
+  font-weight: normal;
+  color: var(--paragraph-color);
+}
+
+.profession {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+p {
+  font-size: 12px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+/* Work-experience */
+.work-experience {
+  margin-top: 20px;
+}
+
+.years {
+  color: var(--year-color);
+}
+
+li {
+  margin-bottom: 15px;
+  list-style: none;
+  font-size: 12px;
+  color: var(--list-color);
+}
+
+/* Certificates */
+.certificates-list li::before {
+  content: "•"; 
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 10px 5px 0px 5px;
+}
+
+/* Code Example */
+.code {
+  max-width: 330px;
+}
+
+/* Contact */
+.contact-list li::before {
+  margin-right: 10px;
+  display: inline-block;
+  transform: scale(.6);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  font-size: clamp(10px, calc(100vw / 900 * 10), 12px);
+}
+
+.telephone::before {
+  content: url("./images/phone.svg");
+}
+
+.email::before {
+  content: url("./images/mail.svg");
+}
+
+.address::before {
+  content: url("./images/address.svg");
+}
+
+/* Skills */
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-list li::after {
+  font-size: 30px;
+  color: var(--main-color);
+  margin-left: 10%;
+}
+
+.physics-experiments::after {
+  content: "•••••";
+}
+
+.english::after {
+  content: "••••";
+}
+
+.python::after {
+  content: "•••";
+}
+
+.javascript::after {
+  content: "••";
+}
+
+.projects img {
+  width: 80%;
+}
+
+.arrows {
+  transform: scale(0.1);
+}
+
+.intro-video {
+  width: clamp(180px, calc(100vw / 1024 * 180), 270px);
+  height: clamp(105px, calc(100vw / 1024 * 105), 150px);
+}
+
+/* Footer */
+.footer-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(187, 122, 59, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer-year {
+  color: var(--main-color);
+}
+
+.rs-school-icon {
+  width: 6rem;
+}
+
+.github-icon {
+  width: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .photo img {
+    width: 270px;
+  }
+  
+  .box {
+    width: 30px;
+    height: 203px;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  .photo img {
+    width: 330px;
+  }
+  
+  .box {
+    width: 50px;
+    height: 247px;
+    margin-right: 2rem;
+  }
+
+  .contact-list li {
+    font-size: 12px;
+  }
+
+  .intro-video {
+    width: 400px;
+    height: 225px;
+  }
+
+  .footer-year {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: clamp(40px, calc(100vw / 320 * 40), 60px);
+  }
+
+  .photo img {
+    width: clamp(200px, calc(100vw / 320 * 200), 330px);
+  }
+  
+  .box {
+    width: 50px;
+    height: 247px;
+    margin-right: 0.5rem;
+  }
+
+  .intro-video {
+    width: clamp(220px, calc(100vw / 320 * 220), 380px);
+    height: clamp(120px, calc(100vw / 320 * 120), 200px);
+  }
+
+}
