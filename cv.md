@@ -37,3 +37,8 @@ I am Akerke Otarbayeva. I am from Astana, Kazakhstan. I work as a Laboratory Ass
   }
   return fridays13.join(" ");
 ```
+
+### Certificates
+1. Python for Everybody Specialization, University of Michigan, Coursera.
+
+2. JS/FE PRE-SCHOOL 2022 (JAVASCRIPT), The Rolling Scopes School.
