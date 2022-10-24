@@ -18,3 +18,22 @@ I am Akerke Otarbayeva. I am from Astana, Kazakhstan. I work as a Laboratory Ass
   - English – Upper Intermediate
 - Computer skills (Python, JavaScript, HTML, CSS, LaTEX)
 - Skills in conducting physics experiments and analyzing data.
+
+### Code examples
+```function fridayTheThirteenths(start, end) {
+  end = end || start;
+  let date = new Date(start, 0, 13);
+  let fridays13 = [];
+
+  for (let year = start; year <= end; year++) {
+    date.setFullYear(year);
+    for (let month = 0; month < 12; month++) {
+      date.setMonth(month);
+      if (date.getDay() === 5) {
+        const strDate = `${date.getMonth() + 1}/13/${date.getFullYear()}`;
+        fridays13.push(strDate);
+      }
+    }
+  }
+  return fridays13.join(" ");
+```
