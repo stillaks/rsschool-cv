@@ -2,9 +2,9 @@
 
 Phone: +7(708) 175 71 21 
 
-Email: [akerke.otarbayeva@gmail.com]
+Email: <akerke.otarbayeva@gmail.com>
 
-Telegram: [@stillaks]
+Telegram: @stillaks
 
 Address: Nur-Sultan, Kazakhstan
 
