@@ -20,14 +20,15 @@ I am Akerke Otarbayeva. I am from Astana, Kazakhstan. I work as a Laboratory Ass
 - Skills in conducting physics experiments and analyzing data.
 
 ### Code examples
-```function fridayTheThirteenths(start, end) {
+```
+function fridayTheThirteenths(start, end) {
   end = end || start;
   let date = new Date(start, 0, 13);
   let fridays13 = [];
 
-  for (let year = start; year <= end; year++) {
+  for (let year = start; year &lt;= end; year++) {
     date.setFullYear(year);
-    for (let month = 0; month < 12; month++) {
+    for (let month = 0; month &lt; 12; month++) {
       date.setMonth(month);
       if (date.getDay() === 5) {
         const strDate = `${date.getMonth() + 1}/13/${date.getFullYear()}`;
@@ -36,6 +37,7 @@ I am Akerke Otarbayeva. I am from Astana, Kazakhstan. I work as a Laboratory Ass
     }
   }
   return fridays13.join(" ");
+}
 ```
 
 ### Certificates
